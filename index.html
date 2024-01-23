@@ -1,14 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
+<!-- head -->
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>b9-a3-Mister Mehedi</title>
+
+  <!-- Talwind and daisy ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Talwind custom classes -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'hockeys-primary': '#FF4240',
+            'hockeys-heading': '#131318',
+            'hockeys-content': '#424247',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- custom css -->
+  <style>
+    .font-manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
 </head>
 
-<body>
+<!-- Body -->
 
+<body class="font-manrope">
+  <!-- Header -->
+  <header class="md:container md:mx-auto">
+    <!-- navbar -->
+    <nav class="mt-14">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li class="text-hockeys-primary text-base font-bold"><a>Home</a></li>
+              <li class="text-hockeys-content text-base font-normal"><a>About</a></li>
+              <li class="text-hockeys-content text-base font-normal"><a>Pages</a></li>
+              <li class="text-hockeys-content text-base font-normal"><a>Blog</a></li>
+              <li class="text-hockeys-content text-base font-normal"><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-4xl font-extrabold text-hockeys-heading">Hockey<span
+              class="text-hockeys-primary">'</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-hockeys-primary text-base font-bold"><a>Home</a></li>
+            <li class="text-hockeys-content text-base font-normal"><a>About</a></li>
+            <li class="text-hockeys-content text-base font-normal"><a>Pages</a></li>
+            <li class="text-hockeys-content text-base font-normal"><a>Blog</a></li>
+            <li class="text-hockeys-content text-base font-normal"><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#89898B">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+          <a class="btn bg-hockeys-primary text-white px-6 py-4 rounded-lg">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner -->
+    <div class="mt-14">
+      <div class="carousel w-full lg:h-[550px] lg:w-[1170] rounded-2xl">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/111.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Images/112.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Main -->
+  <main class="md:container md:mx-auto">
+    <section>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+
+  </footer>
 </body>
 
 </html>
